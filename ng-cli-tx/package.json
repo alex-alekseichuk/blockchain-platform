@@ -1,0 +1,23 @@
+{
+  "name": "ng-cli-tx",
+  "version": "1.0.0",
+  "description": "CLI tool for posting CREATE and TRANSFER tx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:alexander.alexeychuk/ng-cli-tx.git"
+  },
+  "author": "",
+  "bin": {
+    "project-tx": "./cli.js"
+  },
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "ng-common": "git+https://gitlab.project.com/packages/ng-common.git#dev/4.0",
+    "yargs": "^15.3.1"
+  }
+}

@@ -1,0 +1,113 @@
+<!-- shared styles for all elements and index.html -->
+<dom-module id="shared-styles">
+  <template>
+    <style is="custom-style">
+
+      :root {
+        --my-custom-color: #2166ab;
+        --drawer-bg: #434c54;
+
+        --paper-tab-ink: var(--my-custom-color);
+
+        /*--primary-background-color: var(--my-custom-color);*/
+
+        /*--primary-color: var(--my-custom-color);*/
+        /*--light-primary-color: var(--my-custom-color);*/
+        /*--dark-primary-color: var(--my-custom-color);*/
+        --light-theme-background-color: var(--my-custom-color);
+        --dark-theme-background-color: var(--my-custom-color);
+      }
+
+      paper-material {
+        background: white;
+      }
+
+      paper-dialog {
+        background: white;
+        padding: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0 !important;
+
+      }
+
+      paper-date-picker {
+        padding: 0;
+        margin: 0;
+      }
+
+
+      .settingsblock paper-header-panel {
+        --paper-header-panel-shadow: {
+          /*height: 6px;*/
+          /*bottom: -6px;*/
+          box-shadow: none;
+        };
+      }
+
+      .settingsblock paper-toolbar {
+        --paper-toolbar-background: #ebebeb;
+        --paper-toolbar: {
+          color: #2d2d2d;
+          text-transform: uppercase;
+          font-weight:bold;
+        };
+      }
+
+      .uploadblock paper-toolbar {
+        /*--paper-toolbar-background: #2166ab;*/
+      };
+
+      .settingsblock .title {
+        margin-left: 0;
+      }
+
+      .uploadblock {
+        --paper-button: {
+          /*background: blue;*/
+          color: #464646;
+          font-weight: bold;
+        };
+      }
+
+
+      .page-title {
+        @apply(--paper-font-display2);
+      }
+
+      paper-menu a > *, paper-menu paper-item > *, paper-menu paper-icon-item > * {
+        pointer-events: none;
+      }
+
+      @media (max-width: 600px) {
+        .page-title {
+          font-size: 24px!important;
+        }
+      }
+
+      .node circle {
+        cursor: pointer;
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+      }
+
+      .node text {
+        font-size: 11px;
+      }
+
+      path.link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+      }
+
+      iron-pages {
+        padding: 0 !important;
+      }
+
+
+
+    </style>
+  </template>
+</dom-module>

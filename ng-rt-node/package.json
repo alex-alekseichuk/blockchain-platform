@@ -1,0 +1,19 @@
+{
+  "name": "ng-rt-node",
+  "version": "1.0.0",
+  "description": "nodejs application to run server side node of the cluster.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "Project",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "ng-common": "git+https://gitlab.project.com/packages/ng-common.git#dev/4.0",
+    "ws": "^7.3.0"
+  }
+}

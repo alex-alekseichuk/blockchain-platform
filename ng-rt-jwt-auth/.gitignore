@@ -1,0 +1,12 @@
+node_modules/*
+dist/*
+.idea
+.vscode
+.nyc_output
+locales/**/*
+node_modules
+npm-debug.log
+dist/
+.ng-rt-source.json
+coverage
+ng-rt-jwt-auth.json

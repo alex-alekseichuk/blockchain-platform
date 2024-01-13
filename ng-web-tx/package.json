@@ -1,0 +1,35 @@
+{
+  "name": "ng-web-tx",
+  "version": "1.0.0",
+  "description": "Demo transaction application. Post CREATE tx, then post TRANSFER tx based on previous one.",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:alexander.alexeychuk/ng-web-tx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^4.3.0",
+    "ng-common": "git+https://gitlab.project.com/packages/ng-common.git#dev/4.0",
+    "page": "^1.11.3",
+    "regenerator-runtime": "^0.13.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}

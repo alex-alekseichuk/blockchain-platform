@@ -1,0 +1,14 @@
+{
+  "name": "ng-rt-jwt_check",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:plugins/ng-rt-jwt_auth.git"
+  },
+  "author": "",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {},
+  "license": "SEE LICENSE IN LICENSE.md"
+}

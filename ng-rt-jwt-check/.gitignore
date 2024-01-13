@@ -1,0 +1,6 @@
+node_modules/*
+dist/*
+.idea
+packege-lock.json
+.nyc_output
+locales/**/*

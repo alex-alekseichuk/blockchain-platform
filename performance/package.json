@@ -1,0 +1,38 @@
+{
+  "name": "performance",
+  "version": "3.2.0",
+  "description": "Performance tests",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rimraf ./build && npx tsc",
+    "sample": "ts-node ./src/test/sample.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:qa/performance.git"
+  },
+  "author": "PROJECT",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "ajv": "6.0.0",
+    "asciichart": "^1.5.25",
+    "axios": "^0.21.0",
+    "base-x": "3.0.4",
+    "concurrently": "^5.2.0",
+    "csv-parse": "^4.12.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "is-reachable": "^4.0.0",
+    "ng-configservice": "git+https://gitlab.project.com/packages/ng-configservice.git#dev/3.2",
+    "ng-rt-digitalAsset-sdk": "git+https://gitlab.project.com/sdk/ng-rt-digitalAsset-sdk.git#dev/3.2",
+    "ng-rt-smartContracts-driver": "git+https://gitlab.project.com/sdk/ng-rt-smartContracts-driver.git#dev/3.2",
+    "ya-csv": "^1.0.0",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  }
+}

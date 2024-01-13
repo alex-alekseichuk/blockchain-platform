@@ -1,0 +1,12 @@
+.idea
+**/node_modules
+node_modules
+locales
+npm-debug.log
+dist/*
+.ng-rt-source.json
+node_modules/*
+.idea
+.vscode
+coverage
+.nyc_output

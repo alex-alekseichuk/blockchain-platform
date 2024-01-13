@@ -1,0 +1,9 @@
+/client/public/**/[^.]*
+/client/styles/_common.min.css
+/client/bower_components
+.idea
+dist/*
+node_modules/*
+.ng-rt-source.json
+.nyc_output/*
+locales/*

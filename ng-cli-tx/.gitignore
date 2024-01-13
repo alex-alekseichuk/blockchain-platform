@@ -1,0 +1,6 @@
+.idea
+node_modules
+blockchain-keypair.json
+session.json
+tx-*
+wallet*.json

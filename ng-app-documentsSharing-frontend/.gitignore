@@ -1,0 +1,13 @@
+node_modules/*
+temp
+npm-debug.log
+dist/*
+client/bower_components
+client/public
+client/src/views
+.vscode
+.idea
+.ng-rt-source.json
+.nyc_output
+coverage
+locales/*

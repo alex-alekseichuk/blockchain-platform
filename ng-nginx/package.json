@@ -1,0 +1,24 @@
+{
+  "name": "ng-nginx",
+  "version": "1.0.0",
+  "description": "Nginx solution to host static web sites for web client SPA dev. and production.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:alexander.alexeychuk/ng-nginx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "project-nginx": "./cli.js"
+  },
+  "dependencies": {
+    "fs-extra-p": "^7.0.0",
+    "mustache": "^3.0.0",
+    "ng-common": "git+ssh://git@gitlab.project.com:packages/ng-common.git",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "nginx-ldap-cookie",
+  "version": "1.0.0",
+  "description": "Simple Web server/form to put JWT token into cookies for auth on nginx side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "ldapjs": "^1.0.2",
+    "md5": "^2.2.1",
+    "pug": "^2.0.3",
+    "request": "^2.87.0"
+  }
+}

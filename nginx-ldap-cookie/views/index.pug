@@ -1,0 +1,35 @@
+doctype html
+head
+    title= title
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' type='text/css' href='fonts/iconic/css/material-design-iconic-font.min.css')
+    link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' type='text/css' href='css/main.css')
+.limiter
+    canvas#c
+    .login-container
+        .login-panel
+            form.login100-form.validate-form(method='post' action='/auth-proxy-login/')
+                img(width='124' height='111' src='images/t-logo.png')
+                if (incorrect)
+                    div Incorrect Login/Password
+                .input-div.validate-input(data-validate='Incorrect password' class={incorrect})
+                    input.input100(type='text' name='login' value=login, id="auth_proxy_username")
+                    span.focus-input100(data-placeholder='Username')
+                .input-div.validate-input(data-validate='Incorrect password' class={incorrect})
+                    span.btn-show-pass
+                        i.zmdi.zmdi-eye
+                    input.input100(type='password' name='password', id="auth_proxy_password")
+                    span.focus-input100(data-placeholder='Password')
+                button.login-button(type='submit', id="auth_proxy_buttonlogin")
+                    | LOGIN
+                .bottom-text
+                    span.txt1
+                        | Can't log in?
+                    a.txt2(href='#')
+                        | Contact us
+
+script(src='vendor/jquery/jquery-3.2.1.min.js')
+script(type='text/javascript' src='js/authanimation.js')
+script(src='js/main.js')

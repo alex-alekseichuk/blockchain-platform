@@ -1,0 +1,125 @@
+# nginx config for standard nginx docker image
+
+user  nginx;
+worker_processes  1;
+
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+load_module modules/ngx_http_perl_module.so;
+env CONFIG_BASE_URL;
+env CORE_URL;
+env DEFAULT_APP_URL;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    perl_set $configBaseUrl 'sub { return $ENV{"CONFIG_BASE_URL"} || "{{{configBaseUrl}}}"; }';
+    perl_set $coreUrl 'sub { return $ENV{"CORE_URL"} || "{{{coreUrl}}}"; }';
+    perl_set $defaultAppUrl 'sub { return $ENV{"DEFAULT_APP_URL"} || "{{{defaultAppUrl}}}"; }';
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+    disable_symlinks off;
+
+    #gzip  on;
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        {{#coreUrl}}
+            {{^defaultAppUrl}}
+                location / {
+                    proxy_pass ${coreUrl};
+                    index  index.html index.htm;
+                }
+            {{/defaultAppUrl}}
+            {{#defaultAppUrl}}
+                location / {
+                    rewrite ^/$ ${defaultAppUrl} last;
+                    error_page 404 = @core;
+                }
+            {{/defaultAppUrl}}
+            location @core {
+                proxy_pass ${coreUrl};
+                index  index.html index.htm;
+            }
+        {{/coreUrl}}
+        {{^coreUrl}}
+            {{^defaultAppUrl}}
+                location / {
+                    root /usr/share/nginx;
+                }
+            {{/defaultAppUrl}}
+            {{#defaultAppUrl}}
+                location / {
+                    rewrite ^/$ ${defaultAppUrl} last;
+                    error_page 404 = @default;
+                }
+                location @default {
+                    root /usr/share/nginx;
+                    index  index.html index.htm;
+                }
+            {{/defaultAppUrl}}
+        {{/coreUrl}}
+
+        {{#configBaseUrl}}
+            location = /boot.json {
+                default_type  application/json;
+                return 200 '{"baseURL":"${configBaseUrl}"}';
+            }
+        {{/configBaseUrl}}
+
+        {{#arrLocations}}
+            {{#isProxy}}
+                location ~ ^/{{name}}/(.*)$ {
+                    proxy_pass {{{url}}}/$1;
+                    index  index.html index.htm;
+                    {{#coreUrl}}
+                        error_page 404 = @core;
+                    {{/coreUrl}}
+                }
+            {{/isProxy}}
+            {{#isFolder}}
+                location ^~ /{{name}} {
+                    root   /usr/share/nginx;
+                    index  index.html index.htm;
+                    {{#coreUrl}}
+                        error_page 404 = @core;
+                    {{/coreUrl}}
+                }
+            {{/isFolder}}
+            {{#isRepo}}
+                location ^~ /{{name}} {
+                    root   /usr/share/nginx;
+                    index  index.html index.htm;
+                    {{#coreUrl}}
+                        error_page 404 = @core;
+                    {{/coreUrl}}
+                }
+            {{/isRepo}}
+        {{/arrLocations}}
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   /usr/share/nginx/html;
+        }
+
+    }
+}

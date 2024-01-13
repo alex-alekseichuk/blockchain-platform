@@ -1,0 +1,79 @@
+[{
+  "appName": "documents",
+  "appUi": {},
+  "appSM": {
+    "states": [
+      {
+        "x": "entry_State",
+        "ys": [
+          {
+            "y": "entry_Point",
+            "activities": [
+              {
+                "type": "uiAction",
+                "name": "start",
+                "actions": [
+                  {
+                    "type": "uiAction",
+                    "name": "move-xy",
+                    "parameters": {
+                      "x": "staticHTML",
+                      "y": "showPage"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "x":"staticHTML",
+        "ys":[
+          {
+            "y":"showPage",
+            "activities":[
+              {
+                "type":"uiAction",
+                "name":"",
+                "actions":[
+                  {
+                    "type":"uiAction",
+                    "name":"show-page",
+                    "parameters":
+                    {
+                      "isStaticHtml":true,
+                      "pageUrl":"/ng-app-documents/index.html"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "y": "buttonClicked",
+            "activities": [
+              {
+                "type": "uiAction",
+                "name": "",
+                "actions": [
+                  {
+                    "type": "uiAction",
+                    "name": "move-xy",
+                    "parameters":
+                    {
+                      "x": "entry_State",
+                      "y": "entry_Point"
+                    }
+                  }
+                ]
+              }
+            ]
+          }]
+      }
+
+
+    ]
+
+  }
+}]

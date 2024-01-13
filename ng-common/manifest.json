@@ -1,0 +1,25 @@
+{
+  "name": "ng-common",
+  "type": "optional",
+  "author": "",
+  "description": "",
+  "pluginDescription": "package ng-common",
+  "copyright": "PROJECT",
+  "version": "3.0.",
+  "actions": {
+    "after_install": [],
+    "before_install": [],
+    "before_activate": [],
+    "before_deactivate": []
+  },
+  "entryPoints": [],
+  "apiServices": [],
+  "sharedServices": [],
+  "settings": [
+    {
+      "name": "namespace",
+      "caption": "Root name of the URL for the route",
+      "value": "ng-common"
+    }
+  ]
+}

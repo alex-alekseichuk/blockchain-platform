@@ -1,0 +1,15 @@
+{
+  "name": "ng-app-documentsSharing-frontend",
+  "description": "",
+  "version": "3.0.0",
+  "author": "PROJECT",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@xxxxxxxx:xxxx/ng-app-documentsSharing-frontend.git"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}

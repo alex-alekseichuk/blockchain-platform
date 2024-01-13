@@ -1,0 +1,127 @@
+<link rel="import" href="./ngrt-documents-list.html">
+<link rel="import" href="./file-upload.html">
+<link rel="stylesheet" href="styles/_common.min.css">
+<dom-module id="ng-app-documents">
+  <template>
+    <style include="shared-styles"></style>
+    <style is="custom-style">
+
+      :host {
+        width: 100%;
+        height:100%;
+      }
+
+      .documenttoolbar {
+        min-height: 150px;
+      }
+
+    </style>
+
+    <paper-header-panel class="appPanel">
+
+      <!--Toolbar-->
+      <paper-toolbar class="appToolbar" >
+
+        <!--Top-->
+        <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+        <span class="title"><i18n-msg msgid="Upload"><i18n-msg msgid="Document Verify">Document Verify</i18n-msg></i18n-msg></span>
+        <span class="flex"></span>
+        <pa-search></pa-search>
+        <paper-icon-button icon="icons:settings" ></paper-icon-button>
+      </paper-toolbar>
+
+      <div class="content fit">
+
+        <div class="documenttoolbar horizontal layout">
+          <iron-ajax id="ajaxSign" url="/documents/post-tx-record" handle-as="json" method="POST"
+                     content-type="application/json" debounce-duration="300"></iron-ajax>
+          <iron-grid>
+            <div class="m6 s6 xs6">
+              <file-upload id="uploadSave" target="/ng-app-documents/upload-document" method="post"
+                           upload="true" class="flex-4 horizontal layout uploadbox">
+                <i18n-msg msgid="Upload File">Upload File</i18n-msg>
+              </file-upload>
+            </div>
+            <div class="m6 s6 xs6">
+              <file-upload id="uploadVerify" target="/ng-app-documents/upload-document/verify" method="post"
+                           verify="true" class="flex-4 horizontal layout uploadbox">
+                <i18n-msg msgid="Verify File">Verify File</i18n-msg>
+              </file-upload>
+            </div>
+          </iron-grid>
+
+        </div>
+
+        <div class="documentslistblock">
+          <ngrt-documents-list id="documents_list"></ngrt-documents-list>
+        </div>
+
+      </div>
+      </paper-header-panel>
+
+
+      <paper-toast id="toast">
+        <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+      </paper-toast>
+
+  </template>
+  <script>
+    Polymer({
+      is: "ng-app-documents",
+      properties: {
+      },
+      ready: function () {
+      },
+      attached: function () {
+        // i18n
+        I18nMsg.url = 'ng-app-documents/locales'; // optionally use custom folder for locales.
+        Platform.performMicrotaskCheckpoint();
+
+        // upload
+        var uploadSave = this.$.uploadSave;
+        var originalUpload = uploadSave.uploadFile;
+
+        var documentsList = this.$.documents_list;
+
+
+        uploadSave.uploadFile = function (file) {
+          const toaster = document.getElementById('toaster');
+          var reader = new FileReader();
+          reader.onloadend = function () {
+            var hash = keys.crypto_hash(new Uint8Array(reader.result));
+            uploadSave.additional.hash = keys.bs58_encode(hash);
+            originalUpload.call(uploadSave, file, documentsList);
+            toaster.show("The document " + file.name + "hash  been uploaded");
+          };
+          reader.readAsArrayBuffer(file);
+        };
+
+        uploadSave.addEventListener('before-upload', function () {
+          var pubKey = KeysService.getDefault().pubkey;
+          if (pubKey) {
+            uploadSave.additional.ownerPubKey = pubKey;
+          }
+        });
+
+        // verify
+        const toaster = document.getElementById('toaster');
+        var uploadVerify = this.$.uploadVerify;
+
+        uploadVerify.uploadFile = function (file) {
+          var reader = new FileReader();
+          reader.onloadend = function () {
+            var hash = keys.crypto_hash(new Uint8Array(reader.result));
+
+            ajax.post(uploadVerify.target, {
+              hash: keys.bs58_encode(hash)
+            }, function (data) {
+              toaster.show(data && data.exists ? "This document already exists!" : "This document does not exist!");
+            });
+          };
+          reader.readAsArrayBuffer(file);
+        };
+      }
+    });
+  </script>
+
+</dom-module>

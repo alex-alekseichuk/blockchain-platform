@@ -1,0 +1,797 @@
+Working on ".". It might take a while...
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│                                [1mPackages (349)[22m                                │
+│                                                                              │
+├───────────────────────────┬────────────────┬────────────────┬────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ @babel/runtime-corejs2@7. │ MIT            │ MIT            │ -              │
+│ 1to2@1.0.0                │ MIT            │ -              │ -              │
+│ acorn-jsx@3.0.1           │ MIT            │ MIT            │ MIT            │
+│ acorn@3.3.0               │ MIT            │ MIT            │ MIT            │
+│ acorn@5.7.3               │ MIT            │ MIT            │ MIT            │
+│ ajv-errors@1.0.1          │ MIT            │ MIT            │ -              │
+│ ajv-keywords@2.1.1        │ MIT            │ MIT            │ -              │
+│ ajv-keywords@3.4.0        │ MIT            │ MIT            │ -              │
+│ ajv@5.5.2                 │ MIT            │ MIT            │ -              │
+│ ajv@6.10.0                │ MIT            │ MIT            │ -              │
+│ ansi-escapes@3.2.0        │ MIT            │ MIT            │ -              │
+│ ansi-regex@2.1.1          │ MIT            │ MIT            │ -              │
+│ ansi-regex@3.0.0          │ MIT            │ MIT            │ -              │
+│ ansi-styles@2.2.1         │ MIT            │ MIT            │ -              │
+│ ansi-styles@3.2.1         │ MIT            │ MIT            │ -              │
+│ aproba@1.2.0              │ ISC            │ ISC            │ -              │
+│ argparse@1.0.10           │ MIT            │ MIT            │ MIT            │
+│ asn1.js@4.9.2             │ MIT            │ -              │ MIT            │
+│ asn1@0.2.3                │ MIT            │ MIT            │ -              │
+│ assert-plus@0.1.5         │ -              │ -              │ MIT            │
+│ assert-plus@1.0.0         │ MIT            │ -              │ MIT            │
+│ assertion-error@1.1.0     │ MIT            │ -              │ MIT            │
+│ asynckit@0.4.0            │ MIT            │ MIT            │ MIT            │
+│ aws-sign2@0.7.0           │ Apache 2.0     │ Apache 2.0     │ -              │
+│ aws4@1.8.0                │ MIT            │ MIT            │ -              │
+│ axios@0.18.0              │ MIT            │ MIT            │ -              │
+│ babel-code-frame@6.26.0   │ MIT            │ -              │ -              │
+│ babel-runtime@6.26.0      │ MIT            │ -              │ -              │
+│ backoff@2.5.0             │ MIT            │ MIT            │ MIT            │
+│ balanced-match@1.0.0      │ MIT            │ MIT            │ MIT            │
+│ base-x@3.0.5              │ MIT            │ MIT            │ MIT            │
+│ base32.js@0.0.1           │ MIT            │ -              │ -              │
+│ base64-js@1.3.0           │ MIT            │ MIT            │ -              │
+│ bcrypt-pbkdf@1.0.2        │ BSD 3 Clause   │ -              │ -              │
+│ bcryptjs@2.4.0            │ MIT            │ MIT            │ BSD 2 Clause + │
+│ bigchaindb-driver@4.1.1   │ Apache 2.0     │ Apache 2.0     │ -              │
+│ bindings@1.5.0            │ MIT            │ MIT            │ MIT            │
+│ bip39@2.6.0               │ ISC            │ ISC            │ -              │
+│ bluebird@3.5.4            │ MIT            │ MIT            │ MIT            │
+│ bn.js@4.11.8              │ MIT            │ -              │ MIT            │
+│ brace-expansion@1.1.11    │ MIT            │ MIT            │ MIT            │
+│ browser-locale@1.0.3      │ BSD 2 Clause   │ -              │ -              │
+│ browser-resolve@1.11.3    │ MIT            │ MIT            │ -              │
+│ bs58@4.0.1                │ MIT            │ -              │ -              │
+│ buffer-equal-constant-tim │ BSD 3 Clause   │ -              │ -              │
+│ buffer-from@1.1.1         │ MIT            │ MIT            │ -              │
+│ buffer@5.2.1              │ MIT            │ MIT            │ MIT            │
+│ bunyan@1.8.12             │ MIT            │ MIT            │ MIT            │
+│ cacache@11.3.2            │ ISC            │ ISC            │ -              │
+│ caller-path@0.1.0         │ MIT            │ -              │ -              │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ callsites@0.2.0           │ MIT            │ -              │ -              │
+│ camelcase@3.0.0           │ MIT            │ MIT            │ -              │
+│ caseless@0.12.0           │ Apache 2.0     │ Apache 2.0     │ -              │
+│ chai@4.2.0                │ MIT            │ MIT            │ -              │
+│ chalk@1.1.3               │ MIT            │ MIT            │ -              │
+│ chalk@2.4.2               │ MIT            │ MIT            │ -              │
+│ chardet@0.4.2             │ MIT            │ MIT            │ -              │
+│ check-error@1.0.2         │ MIT            │ MIT            │ -              │
+│ chownr@1.1.1              │ ISC            │ ISC            │ -              │
+│ cipher-base@1.0.4         │ MIT            │ MIT            │ -              │
+│ circular-json@0.3.3       │ MIT            │ MIT            │ -              │
+│ cli-cursor@2.1.0          │ MIT            │ MIT            │ -              │
+│ cli-width@2.2.0           │ ISC            │ ISC            │ -              │
+│ clone@2.1.2               │ MIT            │ -              │ -              │
+│ co@4.6.0                  │ MIT            │ MIT            │ -              │
+│ color-convert@1.9.3       │ MIT            │ MIT            │ MIT            │
+│ color-name@1.1.3          │ MIT            │ MIT            │ -              │
+│ combined-stream@1.0.7     │ MIT            │ MIT            │ MIT            │
+│ commander@2.20.0          │ MIT            │ MIT            │ -              │
+│ commondir@1.0.1           │ MIT            │ MIT            │ -              │
+│ concat-map@0.0.1          │ MIT            │ MIT            │ -              │
+│ concat-stream@1.6.2       │ MIT            │ MIT            │ MIT            │
+│ copy-concurrently@1.0.5   │ ISC            │ ISC            │ -              │
+│ core-js@2.6.5             │ MIT            │ MIT            │ -              │
+│ core-util-is@1.0.2        │ MIT            │ MIT            │ -              │
+│ create-hash@1.2.0         │ MIT            │ MIT            │ -              │
+│ create-hmac@1.1.7         │ MIT            │ MIT            │ -              │
+│ cross-spawn@5.1.0         │ MIT            │ MIT            │ MIT            │
+│ crypto-conditions@2.0.3   │ Apache 2.0     │ Apache + Apach │ -              │
+│ crypto@1.0.1              │ ISC            │ -              │ -              │
+│ cyclist@0.2.2             │ -              │ -              │ -              │
+│ dashdash@1.14.1           │ MIT            │ MIT            │ -              │
+│ debug@3.2.6               │ MIT            │ MIT            │ MIT            │
+│ decamelize@1.2.0          │ MIT            │ MIT            │ -              │
+│ decamelize@3.2.0          │ MIT            │ MIT            │ -              │
+│ decode-uri-component@0.2. │ MIT            │ MIT            │ -              │
+│ deep-eql@3.0.1            │ MIT            │ MIT            │ -              │
+│ deep-is@0.1.3             │ MIT            │ MIT            │ -              │
+│ delayed-stream@1.0.0      │ MIT            │ MIT            │ MIT            │
+│ doctrine@2.1.0            │ Apache 2.0     │ Apache 2.0     │ Apache + Apach │
+│ dtrace-provider@0.8.7     │ BSD 2 Clause   │ -              │ -              │
+│ duplexify@3.7.1           │ MIT            │ MIT            │ -              │
+│ ecc-jsbn@0.1.2            │ MIT            │ MIT            │ -              │
+│ ecdsa-sig-formatter@1.0.1 │ Apache 2.0     │ Apache 2.0     │ -              │
+│ ed25519@0.0.4             │ BSD 2 Clause   │ -              │ -              │
+│ encoding@0.1.12           │ MIT            │ -              │ -              │
+│ end-of-stream@1.4.1       │ MIT            │ MIT            │ -              │
+│ errno@0.1.7               │ MIT            │ -              │ MIT            │
+│ es6-promise@3.3.1         │ MIT            │ MIT            │ -              │
+│ es6-promise@4.2.6         │ MIT            │ MIT            │ -              │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ escape-string-regexp@1.0. │ MIT            │ MIT            │ -              │
+│ eslint-scope@3.7.3        │ BSD 2 Clause   │ -              │ -              │
+│ eslint-visitor-keys@1.0.0 │ Apache 2.0     │ Apache 2.0     │ -              │
+│ eslint@4.19.1             │ MIT            │ MIT            │ -              │
+│ espree@3.5.4              │ BSD 2 Clause   │ -              │ -              │
+│ esprima@4.0.1             │ BSD 2 Clause   │ -              │ BSD 2 Clause + │
+│ esquery@1.0.1             │ BSD 3 Clause   │ -              │ -              │
+│ esrecurse@4.2.1           │ BSD 2 Clause   │ -              │ -              │
+│ estraverse@4.2.0          │ BSD 2 Clause   │ -              │ -              │
+│ esutils@2.0.2             │ BSD            │ -              │ MIT            │
+│ extend@3.0.2              │ MIT            │ MIT            │ MIT            │
+│ external-editor@2.2.0     │ MIT            │ MIT            │ MIT            │
+│ extsprintf@1.2.0          │ MIT            │ MIT            │ -              │
+│ extsprintf@1.3.0          │ MIT            │ MIT            │ -              │
+│ fast-deep-equal@1.1.0     │ MIT            │ MIT            │ -              │
+│ fast-deep-equal@2.0.1     │ MIT            │ MIT            │ -              │
+│ fast-json-stable-stringif │ MIT            │ MIT            │ -              │
+│ fast-levenshtein@2.0.6    │ MIT            │ MIT            │ -              │
+│ fetch-ponyfill@1.0.0      │ MIT            │ MIT            │ -              │
+│ fetch-ponyfill@6.0.2      │ MIT            │ MIT            │ -              │
+│ figgy-pudding@3.5.1       │ ISC            │ ISC            │ -              │
+│ figures@2.0.0             │ MIT            │ MIT            │ -              │
+│ file-entry-cache@2.0.0    │ MIT            │ MIT            │ -              │
+│ file-uri-to-path@1.0.0    │ MIT            │ MIT            │ MIT            │
+│ find-cache-dir@2.1.0      │ MIT            │ MIT            │ -              │
+│ find-up@3.0.0             │ MIT            │ MIT            │ -              │
+│ five-bells-condition@5.0. │ Apache 2.0     │ Apache + Apach │ -              │
+│ flat-cache@1.3.4          │ MIT            │ MIT            │ -              │
+│ flush-write-stream@1.1.1  │ MIT            │ MIT            │ -              │
+│ follow-redirects@1.7.0    │ MIT            │ MIT            │ MIT            │
+│ forever-agent@0.6.1       │ Apache 2.0     │ Apache 2.0     │ -              │
+│ form-data@2.3.3           │ MIT            │ MIT            │ MIT            │
+│ from2@2.3.0               │ MIT            │ MIT            │ -              │
+│ fs-write-stream-atomic@1. │ ISC            │ ISC            │ -              │
+│ fs.realpath@1.0.0         │ ISC            │ ISC + MIT      │ -              │
+│ functional-red-black-tree │ MIT            │ MIT            │ MIT            │
+│ get-func-name@2.0.0       │ MIT            │ MIT            │ -              │
+│ getpass@0.1.7             │ MIT            │ MIT            │ -              │
+│ glob@6.0.4                │ ISC            │ ISC            │ -              │
+│ glob@7.1.4                │ ISC            │ ISC            │ -              │
+│ globals@11.12.0           │ MIT            │ MIT            │ -              │
+│ graceful-fs@4.1.15        │ ISC            │ ISC            │ -              │
+│ har-schema@2.0.0          │ ISC            │ ISC            │ ISC            │
+│ har-validator@5.1.3       │ MIT            │ MIT            │ -              │
+│ has-ansi@2.0.0            │ MIT            │ MIT            │ -              │
+│ has-flag@3.0.0            │ MIT            │ MIT            │ -              │
+│ hash-base@3.0.4           │ MIT            │ MIT            │ -              │
+│ hoek@2.16.3               │ BSD 3 Clause   │ -              │ -              │
+│ hot-shots@6.2.0           │ MIT            │ MIT            │ MIT            │
+│ http-signature@1.2.0      │ MIT            │ MIT            │ -              │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ iconv-lite@0.4.24         │ MIT            │ MIT            │ -              │
+│ ieee754@1.1.13            │ BSD 3 Clause   │ BSD 3 Clause   │ -              │
+│ iferr@0.1.5               │ MIT            │ MIT            │ -              │
+│ ignore@3.3.10             │ MIT            │ -              │ -              │
+│ imurmurhash@0.1.4         │ MIT            │ -              │ MIT            │
+│ inflight@1.0.6            │ ISC            │ ISC            │ -              │
+│ inherits@2.0.3            │ ISC            │ ISC            │ -              │
+│ inquirer@3.3.0            │ MIT            │ -              │ MIT            │
+│ is-buffer@1.1.6           │ MIT            │ MIT            │ -              │
+│ is-fullwidth-code-point@2 │ MIT            │ MIT            │ -              │
+│ is-promise@2.1.0          │ MIT            │ MIT            │ -              │
+│ is-resolvable@1.1.0       │ ISC            │ ISC            │ ISC            │
+│ is-stream@1.1.0           │ MIT            │ MIT            │ -              │
+│ is-typedarray@1.0.0       │ MIT            │ MIT            │ -              │
+│ isarray@1.0.0             │ MIT            │ -              │ MIT            │
+│ isemail@1.2.0             │ BSD 2 Clause   │ -              │ BSD 2 Clause + │
+│ isexe@2.0.0               │ ISC            │ ISC            │ -              │
+│ isomorphic-fetch@2.2.1    │ MIT            │ MIT            │ -              │
+│ isstream@0.1.2            │ MIT            │ MIT            │ MIT            │
+│ joi@6.10.1                │ BSD 3 Clause   │ -              │ -              │
+│ js-cookie@2.2.0           │ MIT            │ MIT            │ -              │
+│ js-driver-bigchaindb-exam │ MIT            │ -              │ -              │
+│ js-sha3@0.8.0             │ MIT            │ MIT            │ CC0 + MIT      │
+│ js-tokens@3.0.2           │ MIT            │ MIT            │ MIT            │
+│ js-utility-belt@1.5.0     │ Apache 2.0     │ Apache + Apach │ -              │
+│ js-yaml@3.13.1            │ MIT            │ MIT            │ -              │
+│ jsbn@0.1.1                │ MIT            │ -              │ -              │
+│ json-schema-traverse@0.3. │ MIT            │ MIT            │ -              │
+│ json-schema-traverse@0.4. │ MIT            │ MIT            │ -              │
+│ json-schema@0.2.3         │ AFL 2.1 + BSD  │ -              │ BSD 2 Clause + │
+│ json-stable-stringify-wit │ MIT            │ MIT            │ -              │
+│ json-stable-stringify@1.0 │ MIT            │ MIT            │ -              │
+│ json-stringify-safe@5.0.1 │ ISC            │ ISC            │ -              │
+│ jsonify@0.0.0             │ Public Domain  │ -              │ -              │
+│ jsonwebtoken@7.4.3        │ MIT            │ MIT            │ MIT            │
+│ jsprim@1.4.1              │ MIT            │ MIT            │ -              │
+│ jwa@1.4.1                 │ MIT            │ MIT            │ MIT            │
+│ jws@3.2.2                 │ MIT            │ MIT            │ MIT            │
+│ ldap-filter@0.2.2         │ MIT            │ MIT            │ -              │
+│ ldapauth-fork@3.0.1       │ MIT            │ MIT            │ -              │
+│ ldapjs@1.0.2              │ MIT            │ MIT            │ -              │
+│ levn@0.3.0                │ MIT            │ MIT            │ MIT            │
+│ libsodium-wrappers@0.7.4  │ ISC            │ ISC            │ ISC            │
+│ libsodium@0.7.4           │ ISC            │ ISC            │ ISC            │
+│ locate-path@3.0.0         │ MIT            │ MIT            │ -              │
+│ lodash.once@4.1.1         │ MIT            │ CC0 + MIT      │ -              │
+│ lodash@4.17.11            │ MIT            │ CC0 + MIT      │ -              │
+│ lru-cache@4.0.2           │ ISC            │ ISC            │ -              │
+│ lru-cache@4.1.5           │ ISC            │ ISC            │ -              │
+│ lru-cache@5.1.1           │ ISC            │ ISC            │ -              │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ make-dir@2.1.0            │ MIT            │ MIT            │ -              │
+│ md5.js@1.3.5              │ MIT            │ MIT            │ MIT            │
+│ mime-db@1.40.0            │ MIT            │ MIT            │ -              │
+│ mime-types@2.1.24         │ MIT            │ MIT            │ MIT            │
+│ mimic-fn@1.2.0            │ MIT            │ MIT            │ -              │
+│ minimalistic-assert@1.0.1 │ ISC            │ ISC            │ -              │
+│ minimatch@3.0.4           │ ISC            │ ISC            │ -              │
+│ minimist@0.0.8            │ MIT            │ MIT            │ -              │
+│ mississippi@3.0.0         │ BSD 2 Clause   │ BSD 2 Clause   │ -              │
+│ mkdirp@0.5.1              │ MIT            │ MIT            │ -              │
+│ moment@2.24.0             │ MIT            │ MIT            │ MIT            │
+│ move-concurrently@1.0.1   │ ISC            │ ISC            │ -              │
+│ ms@2.1.1                  │ MIT            │ MIT            │ -              │
+│ mute-stream@0.0.7         │ ISC            │ ISC            │ -              │
+│ mv@2.1.1                  │ MIT            │ MIT            │ -              │
+│ nan@2.13.2                │ MIT            │ MIT            │ MIT            │
+│ natural-compare@1.4.0     │ MIT            │ -              │ MIT            │
+│ ncp@2.0.0                 │ MIT            │ MIT            │ -              │
+│ ng-common@1.0.0           │ SEE LICENSE IN │ -              │ -              │
+│ node-fetch@1.5.1          │ MIT            │ MIT            │ -              │
+│ node-fetch@1.7.3          │ MIT            │ MIT            │ -              │
+│ node-fetch@2.1.2          │ MIT            │ MIT            │ -              │
+│ oauth-sign@0.9.0          │ Apache 2.0     │ Apache 2.0     │ -              │
+│ object-assign@4.1.1       │ MIT            │ MIT            │ -              │
+│ once@1.4.0                │ ISC            │ ISC            │ -              │
+│ onetime@2.0.1             │ MIT            │ MIT            │ -              │
+│ optionator@0.8.2          │ MIT            │ MIT            │ MIT            │
+│ os-tmpdir@1.0.2           │ MIT            │ MIT            │ -              │
+│ p-limit@2.2.0             │ MIT            │ MIT            │ -              │
+│ p-locate@3.0.0            │ MIT            │ MIT            │ -              │
+│ p-try@2.2.0               │ MIT            │ MIT            │ -              │
+│ parallel-transform@1.1.0  │ MIT            │ MIT            │ -              │
+│ passcode@1.0.2            │ MIT            │ MIT            │ -              │
+│ passport-ldapauth@1.0.0   │ MIT            │ MIT            │ -              │
+│ passport-strategy@1.0.0   │ MIT            │ MIT            │ MIT            │
+│ passport@0.3.2            │ MIT            │ MIT            │ -              │
+│ path-exists@3.0.0         │ MIT            │ MIT            │ -              │
+│ path-is-absolute@1.0.1    │ MIT            │ MIT            │ -              │
+│ path-is-inside@1.0.2      │ MIT + WTFPL    │ MIT            │ -              │
+│ pathval@1.1.0             │ MIT            │ MIT            │ -              │
+│ pause@0.0.1               │ -              │ -              │ MIT            │
+│ pbkdf2@3.0.17             │ MIT            │ MIT            │ -              │
+│ performance-now@2.1.0     │ MIT            │ MIT            │ MIT            │
+│ pify@4.0.1                │ MIT            │ MIT            │ -              │
+│ pkg-dir@3.0.0             │ MIT            │ MIT            │ -              │
+│ pluralize@7.0.0           │ MIT            │ MIT            │ -              │
+│ precond@0.2.3             │ -              │ -              │ MIT            │
+│ prelude-ls@1.1.2          │ MIT            │ MIT            │ -              │
+│ process-nextick-args@2.0. │ MIT            │ MIT            │ -              │
+│ progress@2.0.3            │ MIT            │ MIT            │ -              │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ promise-inflight@1.0.1    │ ISC            │ ISC            │ -              │
+│ prr@1.0.1                 │ MIT            │ MIT            │ MIT            │
+│ pseudomap@1.0.2           │ ISC            │ ISC            │ -              │
+│ psl@1.1.31                │ MIT            │ MIT            │ MIT + Ruby     │
+│ pump@2.0.1                │ MIT            │ MIT            │ -              │
+│ pump@3.0.0                │ MIT            │ MIT            │ -              │
+│ pumpify@1.5.1             │ MIT            │ MIT            │ -              │
+│ punycode@1.4.1            │ MIT            │ -              │ MIT            │
+│ punycode@2.1.1            │ MIT            │ -              │ MIT            │
+│ qs@6.5.2                  │ BSD 3 Clause   │ -              │ -              │
+│ query-string@4.3.4        │ MIT            │ MIT            │ -              │
+│ query-string@6.5.0        │ MIT            │ MIT            │ -              │
+│ randombytes@2.1.0         │ MIT            │ MIT            │ -              │
+│ readable-stream@2.3.6     │ MIT            │ MIT            │ -              │
+│ regenerator-runtime@0.11. │ MIT            │ -              │ -              │
+│ regenerator-runtime@0.13. │ MIT            │ -              │ -              │
+│ regexpp@1.1.0             │ MIT            │ MIT            │ -              │
+│ request@2.88.0            │ Apache 2.0     │ Apache 2.0     │ -              │
+│ require-uncached@1.0.3    │ MIT            │ MIT            │ -              │
+│ resolve-from@1.0.1        │ MIT            │ MIT            │ -              │
+│ resolve@1.1.7             │ MIT            │ MIT            │ -              │
+│ restore-cursor@2.0.0      │ MIT            │ MIT            │ -              │
+│ rewire@4.0.1              │ MIT            │ MIT            │ -              │
+│ rimraf@2.4.5              │ ISC            │ ISC            │ -              │
+│ rimraf@2.6.3              │ ISC            │ ISC            │ -              │
+│ ripemd160@2.0.2           │ MIT            │ MIT            │ -              │
+│ run-async@2.3.0           │ MIT            │ MIT            │ MIT            │
+│ run-queue@1.0.3           │ ISC            │ -              │ -              │
+│ rx-lite-aggregates@4.0.8  │ Apache 2.0     │ -              │ Apache + Apach │
+│ rx-lite@4.0.8             │ Apache 2.0     │ -              │ Apache + Apach │
+│ safe-buffer@5.1.2         │ MIT            │ MIT            │ -              │
+│ safe-json-stringify@1.2.0 │ MIT            │ -              │ MIT            │
+│ safer-buffer@2.1.2        │ MIT            │ MIT            │ -              │
+│ schema-utils@1.0.0        │ MIT            │ MIT            │ -              │
+│ semver@5.7.0              │ ISC            │ ISC            │ -              │
+│ serialize-javascript@1.7. │ BSD 3 Clause   │ -              │ BSD 2 Clause + │
+│ sha.js@2.4.11             │ BSD 3 Clause + │ MIT            │ MIT            │
+│ shallow-equals@0.0.0      │ MIT            │ MIT            │ -              │
+│ shebang-command@1.2.0     │ MIT            │ MIT            │ -              │
+│ shebang-regex@1.0.0       │ MIT            │ MIT            │ -              │
+│ signal-exit@3.0.2         │ ISC            │ ISC            │ -              │
+│ slice-ansi@1.0.0          │ MIT            │ MIT            │ -              │
+│ source-list-map@2.0.1     │ MIT            │ MIT            │ MIT            │
+│ source-map@0.6.1          │ BSD 3 Clause   │ -              │ -              │
+│ spark-md5@2.0.2           │ WTFPL          │ -              │ MIT            │
+│ split-on-first@1.1.0      │ MIT            │ MIT            │ -              │
+│ sprintf-js@1.0.3          │ BSD 3 Clause   │ -              │ BSD 2 Clause + │
+│ sprintf-js@1.1.2          │ BSD 3 Clause   │ -              │ BSD 2 Clause + │
+│ sshpk@1.16.1              │ MIT            │ MIT            │ -              │
+│ ssri@6.0.1                │ ISC            │ ISC            │ W3C            │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Module name               │ package        │ License        │ README         │
+├───────────────────────────┼────────────────┼────────────────┼────────────────┤
+│ stream-each@1.2.3         │ MIT            │ MIT            │ -              │
+│ stream-shift@1.0.0        │ MIT            │ MIT            │ -              │
+│ strict-uri-encode@1.1.0   │ MIT            │ MIT            │ -              │
+│ strict-uri-encode@2.0.0   │ MIT            │ MIT            │ -              │
+│ string_decoder@1.1.1      │ MIT            │ MIT            │ -              │
+│ string-width@2.1.1        │ MIT            │ MIT            │ -              │
+│ strip-ansi@3.0.1          │ MIT            │ MIT            │ -              │
+│ strip-ansi@4.0.0          │ MIT            │ MIT            │ -              │
+│ strip-json-comments@2.0.1 │ MIT            │ MIT            │ -              │
+│ supports-color@2.0.0      │ MIT            │ MIT            │ -              │
+│ supports-color@5.5.0      │ MIT            │ MIT            │ -              │
+│ table@4.0.2               │ BSD 3 Clause   │ -              │ -              │
+│ text-table@0.2.0          │ MIT            │ MIT            │ -              │
+│ through@2.3.8             │ MIT            │ -              │ -              │
+│ through2@2.0.5            │ MIT            │ MIT            │ MIT            │
+│ tmp@0.0.33                │ MIT            │ MIT            │ -              │
+│ topo@1.1.0                │ BSD 3 Clause   │ -              │ -              │
+│ tough-cookie@2.4.3        │ BSD 3 Clause   │ -              │ -              │
+│ tunnel-agent@0.6.0        │ Apache 2.0     │ Apache 2.0     │ -              │
+│ tweetnacl@0.14.5          │ Unlicense      │ Unlicense      │ -              │
+│ tweetnacl@1.0.1           │ Unlicense      │ Unlicense      │ -              │
+│ type-check@0.3.2          │ MIT            │ MIT            │ MIT            │
+│ type-detect@4.0.8         │ MIT            │ MIT            │ -              │
+│ typedarray@0.0.6          │ MIT            │ MIT            │ -              │
+│ uglify-js@3.5.11          │ BSD 2 Clause   │ BSD 2 Clause + │ -              │
+│ uglifyjs-webpack-plugin@2 │ MIT            │ MIT            │ MIT            │
+│ undefined@undefined       │ -              │ -              │ -              │
+│ unique-filename@1.1.1     │ ISC            │ ISC            │ -              │
+│ unique-slug@2.0.1         │ ISC            │ ISC            │ -              │
+│ unorm@1.5.0               │ GPL 2.0 + MIT  │ MIT            │ MIT            │
+│ uri-js@4.2.2              │ BSD 2 Clause   │ -              │ -              │
+│ util-deprecate@1.0.2      │ MIT            │ MIT            │ MIT            │
+│ uuid@3.3.2                │ MIT            │ MIT            │ -              │
+│ vasync@1.6.4              │ MIT            │ MIT            │ -              │
+│ verror@1.10.0             │ MIT            │ MIT            │ -              │
+│ verror@1.6.0              │ MIT            │ MIT            │ -              │
+│ webpack-merge@4.2.1       │ MIT            │ MIT            │ -              │
+│ webpack-sources@1.3.0     │ MIT            │ MIT            │ -              │
+│ whatwg-fetch@3.0.0        │ MIT            │ MIT            │ -              │
+│ which@1.3.1               │ ISC            │ ISC            │ -              │
+│ wordwrap@1.0.0            │ MIT            │ MIT            │ -              │
+│ worker-farm@1.7.0         │ MIT            │ MIT            │ MIT            │
+│ wrappy@1.0.2              │ ISC            │ ISC            │ -              │
+│ write@0.2.1               │ MIT            │ MIT            │ MIT            │
+│ xregexp@4.2.4             │ MIT            │ MIT            │ MIT            │
+│ xtend@4.0.1               │ MIT            │ -              │ -              │
+│ y18n@4.0.0                │ ISC            │ ISC            │ -              │
+│ yallist@2.1.2             │ ISC            │ ISC            │ -              │
+│ yallist@3.0.3             │ ISC            │ ISC            │ -              │
+└───────────────────────────┴────────────────┴────────────────┴────────────────┘
+
+
+   
+
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │                                                                        │
+   │                             [1mLicenses (368)[22m                             │
+   │                                                                        │
+   ├──────────────────────────────────────────┬──────────────┬──────────────┤
+   │ License                                  │ Number       │ %            │
+   ├──────────────────────────────────────────┼──────────────┼──────────────┤
+   │ MIT                                      │ 258          │ 70           │
+   │ ISC                                      │ 44           │ 11           │
+   │ BSD 3 Clause                             │ 20           │ 5            │
+   │ BSD 2 Clause                             │ 17           │ 4            │
+   │ Apache 2.0                               │ 15           │ 4            │
+   │ CC0                                      │ 3            │ 0            │
+   │ Unlicense                                │ 2            │ 0            │
+   │ WTFPL                                    │ 2            │ 0            │
+   │ AFL 2.1                                  │ 1            │ 0            │
+   │ BSD                                      │ 1            │ 0            │
+   │ GPL 2.0                                  │ 1            │ 0            │
+   │ Public Domain                            │ 1            │ 0            │
+   │ Ruby                                     │ 1            │ 0            │
+   │ SEE LICENSE IN LICENSE                   │ 1            │ 0            │
+   │ W3C                                      │ 1            │ 0            │
+   └──────────────────────────────────────────┴──────────────┴──────────────┘
+   
+
+
+
+┌────────────────────────────────────────────┐
+│                                            │
+│         [1mPackages by Licenses (349)[22m         │
+│                                            │
+├────────────────┬───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ -              │ assert-plus@0.1.5         │
+│ -              │ cyclist@0.2.2             │
+│ -              │ pause@0.0.1               │
+│ -              │ precond@0.2.3             │
+│ -              │ undefined@undefined       │
+│ AFL 2.1 + BSD  │ json-schema@0.2.3         │
+│ Apache 2.0     │ aws-sign2@0.7.0           │
+│ Apache 2.0     │ bigchaindb-driver@4.1.1   │
+│ Apache 2.0     │ caseless@0.12.0           │
+│ Apache 2.0     │ crypto-conditions@2.0.3   │
+│ Apache 2.0     │ doctrine@2.1.0            │
+│ Apache 2.0     │ ecdsa-sig-formatter@1.0.1 │
+│ Apache 2.0     │ eslint-visitor-keys@1.0.0 │
+│ Apache 2.0     │ five-bells-condition@5.0. │
+│ Apache 2.0     │ forever-agent@0.6.1       │
+│ Apache 2.0     │ js-utility-belt@1.5.0     │
+│ Apache 2.0     │ oauth-sign@0.9.0          │
+│ Apache 2.0     │ request@2.88.0            │
+│ Apache 2.0     │ rx-lite-aggregates@4.0.8  │
+│ Apache 2.0     │ rx-lite@4.0.8             │
+│ Apache 2.0     │ tunnel-agent@0.6.0        │
+│ BSD            │ esutils@2.0.2             │
+│ BSD 2 Clause   │ browser-locale@1.0.3      │
+│ BSD 2 Clause   │ dtrace-provider@0.8.7     │
+│ BSD 2 Clause   │ ed25519@0.0.4             │
+│ BSD 2 Clause   │ eslint-scope@3.7.3        │
+│ BSD 2 Clause   │ espree@3.5.4              │
+│ BSD 2 Clause   │ esprima@4.0.1             │
+│ BSD 2 Clause   │ esrecurse@4.2.1           │
+│ BSD 2 Clause   │ estraverse@4.2.0          │
+│ BSD 2 Clause   │ isemail@1.2.0             │
+│ BSD 2 Clause   │ mississippi@3.0.0         │
+│ BSD 2 Clause   │ uglify-js@3.5.11          │
+│ BSD 2 Clause   │ uri-js@4.2.2              │
+│ BSD 3 Clause   │ bcrypt-pbkdf@1.0.2        │
+│ BSD 3 Clause   │ buffer-equal-constant-tim │
+│ BSD 3 Clause   │ esquery@1.0.1             │
+│ BSD 3 Clause   │ hoek@2.16.3               │
+│ BSD 3 Clause   │ ieee754@1.1.13            │
+│ BSD 3 Clause   │ joi@6.10.1                │
+│ BSD 3 Clause   │ qs@6.5.2                  │
+│ BSD 3 Clause   │ serialize-javascript@1.7. │
+│ BSD 3 Clause   │ source-map@0.6.1          │
+│ BSD 3 Clause   │ sprintf-js@1.0.3          │
+│ BSD 3 Clause   │ sprintf-js@1.1.2          │
+│ BSD 3 Clause   │ table@4.0.2               │
+│ BSD 3 Clause   │ topo@1.1.0                │
+│ BSD 3 Clause   │ tough-cookie@2.4.3        │
+│ BSD 3 Clause + │ sha.js@2.4.11             │
+│ GPL 2.0 + MIT  │ unorm@1.5.0               │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ ISC            │ aproba@1.2.0              │
+│ ISC            │ bip39@2.6.0               │
+│ ISC            │ cacache@11.3.2            │
+│ ISC            │ chownr@1.1.1              │
+│ ISC            │ cli-width@2.2.0           │
+│ ISC            │ copy-concurrently@1.0.5   │
+│ ISC            │ crypto@1.0.1              │
+│ ISC            │ figgy-pudding@3.5.1       │
+│ ISC            │ fs-write-stream-atomic@1. │
+│ ISC            │ fs.realpath@1.0.0         │
+│ ISC            │ glob@6.0.4                │
+│ ISC            │ glob@7.1.4                │
+│ ISC            │ graceful-fs@4.1.15        │
+│ ISC            │ har-schema@2.0.0          │
+│ ISC            │ inflight@1.0.6            │
+│ ISC            │ inherits@2.0.3            │
+│ ISC            │ is-resolvable@1.1.0       │
+│ ISC            │ isexe@2.0.0               │
+│ ISC            │ json-stringify-safe@5.0.1 │
+│ ISC            │ libsodium-wrappers@0.7.4  │
+│ ISC            │ libsodium@0.7.4           │
+│ ISC            │ lru-cache@4.0.2           │
+│ ISC            │ lru-cache@4.1.5           │
+│ ISC            │ lru-cache@5.1.1           │
+│ ISC            │ minimalistic-assert@1.0.1 │
+│ ISC            │ minimatch@3.0.4           │
+│ ISC            │ move-concurrently@1.0.1   │
+│ ISC            │ mute-stream@0.0.7         │
+│ ISC            │ once@1.4.0                │
+│ ISC            │ promise-inflight@1.0.1    │
+│ ISC            │ pseudomap@1.0.2           │
+│ ISC            │ rimraf@2.4.5              │
+│ ISC            │ rimraf@2.6.3              │
+│ ISC            │ run-queue@1.0.3           │
+│ ISC            │ semver@5.7.0              │
+│ ISC            │ signal-exit@3.0.2         │
+│ ISC            │ ssri@6.0.1                │
+│ ISC            │ unique-filename@1.1.1     │
+│ ISC            │ unique-slug@2.0.1         │
+│ ISC            │ which@1.3.1               │
+│ ISC            │ wrappy@1.0.2              │
+│ ISC            │ y18n@4.0.0                │
+│ ISC            │ yallist@2.1.2             │
+│ ISC            │ yallist@3.0.3             │
+│ MIT            │ @babel/runtime-corejs2@7. │
+│ MIT            │ 1to2@1.0.0                │
+│ MIT            │ acorn-jsx@3.0.1           │
+│ MIT            │ acorn@3.3.0               │
+│ MIT            │ acorn@5.7.3               │
+│ MIT            │ ajv-errors@1.0.1          │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ MIT            │ ajv-keywords@2.1.1        │
+│ MIT            │ ajv-keywords@3.4.0        │
+│ MIT            │ ajv@5.5.2                 │
+│ MIT            │ ajv@6.10.0                │
+│ MIT            │ ansi-escapes@3.2.0        │
+│ MIT            │ ansi-regex@2.1.1          │
+│ MIT            │ ansi-regex@3.0.0          │
+│ MIT            │ ansi-styles@2.2.1         │
+│ MIT            │ ansi-styles@3.2.1         │
+│ MIT            │ argparse@1.0.10           │
+│ MIT            │ asn1.js@4.9.2             │
+│ MIT            │ asn1@0.2.3                │
+│ MIT            │ assert-plus@1.0.0         │
+│ MIT            │ assertion-error@1.1.0     │
+│ MIT            │ asynckit@0.4.0            │
+│ MIT            │ aws4@1.8.0                │
+│ MIT            │ axios@0.18.0              │
+│ MIT            │ babel-code-frame@6.26.0   │
+│ MIT            │ babel-runtime@6.26.0      │
+│ MIT            │ backoff@2.5.0             │
+│ MIT            │ balanced-match@1.0.0      │
+│ MIT            │ base-x@3.0.5              │
+│ MIT            │ base32.js@0.0.1           │
+│ MIT            │ base64-js@1.3.0           │
+│ MIT            │ bcryptjs@2.4.0            │
+│ MIT            │ bindings@1.5.0            │
+│ MIT            │ bluebird@3.5.4            │
+│ MIT            │ bn.js@4.11.8              │
+│ MIT            │ brace-expansion@1.1.11    │
+│ MIT            │ browser-resolve@1.11.3    │
+│ MIT            │ bs58@4.0.1                │
+│ MIT            │ buffer-from@1.1.1         │
+│ MIT            │ buffer@5.2.1              │
+│ MIT            │ bunyan@1.8.12             │
+│ MIT            │ caller-path@0.1.0         │
+│ MIT            │ callsites@0.2.0           │
+│ MIT            │ camelcase@3.0.0           │
+│ MIT            │ chai@4.2.0                │
+│ MIT            │ chalk@1.1.3               │
+│ MIT            │ chalk@2.4.2               │
+│ MIT            │ chardet@0.4.2             │
+│ MIT            │ check-error@1.0.2         │
+│ MIT            │ cipher-base@1.0.4         │
+│ MIT            │ circular-json@0.3.3       │
+│ MIT            │ cli-cursor@2.1.0          │
+│ MIT            │ clone@2.1.2               │
+│ MIT            │ co@4.6.0                  │
+│ MIT            │ color-convert@1.9.3       │
+│ MIT            │ color-name@1.1.3          │
+│ MIT            │ combined-stream@1.0.7     │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ MIT            │ commander@2.20.0          │
+│ MIT            │ commondir@1.0.1           │
+│ MIT            │ concat-map@0.0.1          │
+│ MIT            │ concat-stream@1.6.2       │
+│ MIT            │ core-js@2.6.5             │
+│ MIT            │ core-util-is@1.0.2        │
+│ MIT            │ create-hash@1.2.0         │
+│ MIT            │ create-hmac@1.1.7         │
+│ MIT            │ cross-spawn@5.1.0         │
+│ MIT            │ dashdash@1.14.1           │
+│ MIT            │ debug@3.2.6               │
+│ MIT            │ decamelize@1.2.0          │
+│ MIT            │ decamelize@3.2.0          │
+│ MIT            │ decode-uri-component@0.2. │
+│ MIT            │ deep-eql@3.0.1            │
+│ MIT            │ deep-is@0.1.3             │
+│ MIT            │ delayed-stream@1.0.0      │
+│ MIT            │ duplexify@3.7.1           │
+│ MIT            │ ecc-jsbn@0.1.2            │
+│ MIT            │ encoding@0.1.12           │
+│ MIT            │ end-of-stream@1.4.1       │
+│ MIT            │ errno@0.1.7               │
+│ MIT            │ es6-promise@3.3.1         │
+│ MIT            │ es6-promise@4.2.6         │
+│ MIT            │ escape-string-regexp@1.0. │
+│ MIT            │ eslint@4.19.1             │
+│ MIT            │ extend@3.0.2              │
+│ MIT            │ external-editor@2.2.0     │
+│ MIT            │ extsprintf@1.2.0          │
+│ MIT            │ extsprintf@1.3.0          │
+│ MIT            │ fast-deep-equal@1.1.0     │
+│ MIT            │ fast-deep-equal@2.0.1     │
+│ MIT            │ fast-json-stable-stringif │
+│ MIT            │ fast-levenshtein@2.0.6    │
+│ MIT            │ fetch-ponyfill@1.0.0      │
+│ MIT            │ fetch-ponyfill@6.0.2      │
+│ MIT            │ figures@2.0.0             │
+│ MIT            │ file-entry-cache@2.0.0    │
+│ MIT            │ file-uri-to-path@1.0.0    │
+│ MIT            │ find-cache-dir@2.1.0      │
+│ MIT            │ find-up@3.0.0             │
+│ MIT            │ flat-cache@1.3.4          │
+│ MIT            │ flush-write-stream@1.1.1  │
+│ MIT            │ follow-redirects@1.7.0    │
+│ MIT            │ form-data@2.3.3           │
+│ MIT            │ from2@2.3.0               │
+│ MIT            │ functional-red-black-tree │
+│ MIT            │ get-func-name@2.0.0       │
+│ MIT            │ getpass@0.1.7             │
+│ MIT            │ globals@11.12.0           │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ MIT            │ har-validator@5.1.3       │
+│ MIT            │ has-ansi@2.0.0            │
+│ MIT            │ has-flag@3.0.0            │
+│ MIT            │ hash-base@3.0.4           │
+│ MIT            │ hot-shots@6.2.0           │
+│ MIT            │ http-signature@1.2.0      │
+│ MIT            │ iconv-lite@0.4.24         │
+│ MIT            │ iferr@0.1.5               │
+│ MIT            │ ignore@3.3.10             │
+│ MIT            │ imurmurhash@0.1.4         │
+│ MIT            │ inquirer@3.3.0            │
+│ MIT            │ is-buffer@1.1.6           │
+│ MIT            │ is-fullwidth-code-point@2 │
+│ MIT            │ is-promise@2.1.0          │
+│ MIT            │ is-stream@1.1.0           │
+│ MIT            │ is-typedarray@1.0.0       │
+│ MIT            │ isarray@1.0.0             │
+│ MIT            │ isomorphic-fetch@2.2.1    │
+│ MIT            │ isstream@0.1.2            │
+│ MIT            │ js-cookie@2.2.0           │
+│ MIT            │ js-driver-bigchaindb-exam │
+│ MIT            │ js-sha3@0.8.0             │
+│ MIT            │ js-tokens@3.0.2           │
+│ MIT            │ js-yaml@3.13.1            │
+│ MIT            │ jsbn@0.1.1                │
+│ MIT            │ json-schema-traverse@0.3. │
+│ MIT            │ json-schema-traverse@0.4. │
+│ MIT            │ json-stable-stringify-wit │
+│ MIT            │ json-stable-stringify@1.0 │
+│ MIT            │ jsonwebtoken@7.4.3        │
+│ MIT            │ jsprim@1.4.1              │
+│ MIT            │ jwa@1.4.1                 │
+│ MIT            │ jws@3.2.2                 │
+│ MIT            │ ldap-filter@0.2.2         │
+│ MIT            │ ldapauth-fork@3.0.1       │
+│ MIT            │ ldapjs@1.0.2              │
+│ MIT            │ levn@0.3.0                │
+│ MIT            │ locate-path@3.0.0         │
+│ MIT            │ lodash.once@4.1.1         │
+│ MIT            │ lodash@4.17.11            │
+│ MIT            │ make-dir@2.1.0            │
+│ MIT            │ md5.js@1.3.5              │
+│ MIT            │ mime-db@1.40.0            │
+│ MIT            │ mime-types@2.1.24         │
+│ MIT            │ mimic-fn@1.2.0            │
+│ MIT            │ minimist@0.0.8            │
+│ MIT            │ mkdirp@0.5.1              │
+│ MIT            │ moment@2.24.0             │
+│ MIT            │ ms@2.1.1                  │
+│ MIT            │ mv@2.1.1                  │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ MIT            │ nan@2.13.2                │
+│ MIT            │ natural-compare@1.4.0     │
+│ MIT            │ ncp@2.0.0                 │
+│ MIT            │ node-fetch@1.5.1          │
+│ MIT            │ node-fetch@1.7.3          │
+│ MIT            │ node-fetch@2.1.2          │
+│ MIT            │ object-assign@4.1.1       │
+│ MIT            │ onetime@2.0.1             │
+│ MIT            │ optionator@0.8.2          │
+│ MIT            │ os-tmpdir@1.0.2           │
+│ MIT            │ p-limit@2.2.0             │
+│ MIT            │ p-locate@3.0.0            │
+│ MIT            │ p-try@2.2.0               │
+│ MIT            │ parallel-transform@1.1.0  │
+│ MIT            │ passcode@1.0.2            │
+│ MIT            │ passport-ldapauth@1.0.0   │
+│ MIT            │ passport-strategy@1.0.0   │
+│ MIT            │ passport@0.3.2            │
+│ MIT            │ path-exists@3.0.0         │
+│ MIT            │ path-is-absolute@1.0.1    │
+│ MIT            │ pathval@1.1.0             │
+│ MIT            │ pbkdf2@3.0.17             │
+│ MIT            │ performance-now@2.1.0     │
+│ MIT            │ pify@4.0.1                │
+│ MIT            │ pkg-dir@3.0.0             │
+│ MIT            │ pluralize@7.0.0           │
+│ MIT            │ prelude-ls@1.1.2          │
+│ MIT            │ process-nextick-args@2.0. │
+│ MIT            │ progress@2.0.3            │
+│ MIT            │ prr@1.0.1                 │
+│ MIT            │ psl@1.1.31                │
+│ MIT            │ pump@2.0.1                │
+│ MIT            │ pump@3.0.0                │
+│ MIT            │ pumpify@1.5.1             │
+│ MIT            │ punycode@1.4.1            │
+│ MIT            │ punycode@2.1.1            │
+│ MIT            │ query-string@4.3.4        │
+│ MIT            │ query-string@6.5.0        │
+│ MIT            │ randombytes@2.1.0         │
+│ MIT            │ readable-stream@2.3.6     │
+│ MIT            │ regenerator-runtime@0.11. │
+│ MIT            │ regenerator-runtime@0.13. │
+│ MIT            │ regexpp@1.1.0             │
+│ MIT            │ require-uncached@1.0.3    │
+│ MIT            │ resolve-from@1.0.1        │
+│ MIT            │ resolve@1.1.7             │
+│ MIT            │ restore-cursor@2.0.0      │
+│ MIT            │ rewire@4.0.1              │
+│ MIT            │ ripemd160@2.0.2           │
+│ MIT            │ run-async@2.3.0           │
+├────────────────┼───────────────────────────┤
+│ License        │ Module name               │
+├────────────────┼───────────────────────────┤
+│ MIT            │ safe-buffer@5.1.2         │
+│ MIT            │ safe-json-stringify@1.2.0 │
+│ MIT            │ safer-buffer@2.1.2        │
+│ MIT            │ schema-utils@1.0.0        │
+│ MIT            │ shallow-equals@0.0.0      │
+│ MIT            │ shebang-command@1.2.0     │
+│ MIT            │ shebang-regex@1.0.0       │
+│ MIT            │ slice-ansi@1.0.0          │
+│ MIT            │ source-list-map@2.0.1     │
+│ MIT            │ split-on-first@1.1.0      │
+│ MIT            │ sshpk@1.16.1              │
+│ MIT            │ stream-each@1.2.3         │
+│ MIT            │ stream-shift@1.0.0        │
+│ MIT            │ strict-uri-encode@1.1.0   │
+│ MIT            │ strict-uri-encode@2.0.0   │
+│ MIT            │ string_decoder@1.1.1      │
+│ MIT            │ string-width@2.1.1        │
+│ MIT            │ strip-ansi@3.0.1          │
+│ MIT            │ strip-ansi@4.0.0          │
+│ MIT            │ strip-json-comments@2.0.1 │
+│ MIT            │ supports-color@2.0.0      │
+│ MIT            │ supports-color@5.5.0      │
+│ MIT            │ text-table@0.2.0          │
+│ MIT            │ through@2.3.8             │
+│ MIT            │ through2@2.0.5            │
+│ MIT            │ tmp@0.0.33                │
+│ MIT            │ type-check@0.3.2          │
+│ MIT            │ type-detect@4.0.8         │
+│ MIT            │ typedarray@0.0.6          │
+│ MIT            │ uglifyjs-webpack-plugin@2 │
+│ MIT            │ util-deprecate@1.0.2      │
+│ MIT            │ uuid@3.3.2                │
+│ MIT            │ vasync@1.6.4              │
+│ MIT            │ verror@1.10.0             │
+│ MIT            │ verror@1.6.0              │
+│ MIT            │ webpack-merge@4.2.1       │
+│ MIT            │ webpack-sources@1.3.0     │
+│ MIT            │ whatwg-fetch@3.0.0        │
+│ MIT            │ wordwrap@1.0.0            │
+│ MIT            │ worker-farm@1.7.0         │
+│ MIT            │ write@0.2.1               │
+│ MIT            │ xregexp@4.2.4             │
+│ MIT            │ xtend@4.0.1               │
+│ MIT + WTFPL    │ path-is-inside@1.0.2      │
+│ Public Domain  │ jsonify@0.0.0             │
+│ SEE LICENSE IN │ ng-common@1.0.0           │
+│ Unlicense      │ tweetnacl@0.14.5          │
+│ Unlicense      │ tweetnacl@1.0.1           │
+│ WTFPL          │ spark-md5@2.0.2           │
+└────────────────┴───────────────────────────┘
+
+
+   
+
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │                                                                        │
+   │                                [1mReports[22m                                 │
+   │                                                                        │
+   ├────────────────────────────────────────────────────────────────────────┤
+   │ 0% of the dependencies are unlicensed (2/349)                          │
+   └────────────────────────────────────────────────────────────────────────┘
+   
+

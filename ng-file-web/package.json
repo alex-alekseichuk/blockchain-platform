@@ -1,0 +1,32 @@
+{
+  "name": "ng-file-web",
+  "version": "1.0.0",
+  "description": "Web application to upload/download files.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ng-common": "git+https://gitlab.project.com/packages/ng-common.git#dev/4.0",
+    "regenerator-runtime": "^0.13.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:packages/ng-file-web.git"
+  },
+  "author": "Project",
+  "license": "MIT"
+}

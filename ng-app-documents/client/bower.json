@@ -1,0 +1,21 @@
+{
+  "name": "ng-app-documents",
+  "dependencies": {
+    "i18n-msg": "^1.1.0",
+    "d3": "~3.5.17",
+    "webcomponentsjs": "^0.7.22",
+    "Polymer/polymer": "^1.2.0",
+    "PolymerElements/iron-ajax": "~1.1.1",
+    "PolymerElements/iron-component-page": "~1.1.3",
+    "PolymerElements/iron-elements": "^1.0.0",
+    "PolymerElements/iron-flex-layout": "^1.2.3",
+    "page": "^1.7.1",
+    "PolymerElements/paper-elements": "^1.0.1",
+    "moment": "^2.13.0",
+    "libsodium.js": "^0.3.0",
+    "underscore": "^1.8.3",
+    "iron-grid": "7cc741496f",
+    "PolymerElements/neon-elements": "^1.0.0",
+    "PolymerElements/platinum-elements": "^1.1.0"
+  }
+}

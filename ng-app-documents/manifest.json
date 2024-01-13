@@ -1,0 +1,109 @@
+{
+    "name": "ng-app-documents",
+    "type": "optional",
+    "author": "",
+    "description": "Documents upload and verfication",
+    "copyright": "",
+    "version": "2.0.",
+    "entryPoints": [{
+            "type": "service",
+            "parameters": {
+                "file": "./server/services/service.js"
+            }
+        },
+        {
+            "type": "route",
+            "parameters": {
+                "file": "./server/routes/routes.js"
+            }
+        }
+    ],
+    "actions": {
+        "before_install": [{
+            "type": "NPM_INSTALL",
+            "parameters": {
+                "package": true
+            }
+        }],
+        "after_install": [{
+                "name": "copy docs",
+                "type": "COPY_FILES",
+                "parameters": {
+                    "source": "docs/api",
+                    "target": "config/docs/api/ng-app-documents"
+                }
+            },
+            {
+                "name": "copy docs",
+                "type": "COPY_FILES",
+                "parameters": {
+                    "source": "docs/dist/userguides/enduser",
+                    "target": "config/docs/userguides/enduser/ng-app-documents"
+                }
+            },
+            {
+                "name": "add stateMachine for documents",
+                "type": "ADD_DATA",
+                "parameters": {
+                    "model_name": "statemachineApp",
+                    "file": "server/sm/documents.json"
+                }
+            }
+        ],
+        "after_uninstall": [],
+        "before_activate": [],
+        "after_activate": [{
+                "name": "remove menu item",
+                "type": "REMOVE_DATA",
+                "parameters": {
+                    "model_name": "route",
+                    "criteries": [{
+                        "type": "href",
+                        "route": "documents",
+                        "module": "admin"
+                    }]
+                }
+            },
+            {
+                "name": "add menu item documents",
+                "type": "ADD_DATA",
+                "parameters": {
+                    "model_name": "route",
+                    "data": [{
+                        "type": "href",
+                        "route": "documents",
+                        "href": "pluginsdisplay/!ng-app-documents!index.html/ng-app-documents/{}/ng-app-documents/Upload File",
+                        "icon": "icons:file-upload",
+                        "caption": "File Upload",
+                        "trustLevel": 1,
+                        "roles": [
+                            "user"
+                        ],
+                        "module": "admin",
+                        "order": 1100
+                    }]
+                }
+            }
+        ],
+        "before_deactivate": [],
+        "after_deactivate": [{
+            "name": "remove menu item",
+            "type": "REMOVE_DATA",
+            "parameters": {
+                "model_name": "route",
+                "criteries": [{
+                    "type": "href",
+                    "route": "documents",
+                    "module": "admin"
+                }]
+            }
+        }]
+    },
+    "sharedServices": [],
+    "apiServices": [],
+    "settings": [{
+        "name": "namespace",
+        "caption": "Root name of the URL for the route",
+        "value": "ng-app-documents"
+    }]
+}

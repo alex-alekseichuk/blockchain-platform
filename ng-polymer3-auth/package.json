@@ -1,0 +1,17 @@
+{
+  "name": "ng-polymer3-auth",
+  "version": "1.0.0",
+  "description": "Auth. SPA implementation with UI based on Polymer3",
+  "scripts": {},
+  "author": "Project",
+  "license": "MIT",
+  "devDependencies": {
+    "@polymer/iron-pages": "^3.0.1",
+    "@polymer/polymer": "^3.0.5",
+    "@webcomponents/webcomponentsjs": "^2.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:alexander.alexeychuk/ng-polymer3-auth.git"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "ng-blockchain-provider-abci-project",
+  "type": "optional",
+  "description": "application ng-blockchain-provider-abci-project",
+  "version": "3.0.",
+  "useAsApp": false,
+  "entryPoints": [
+    {
+      "type": "service",
+      "parameters": {
+        "file": "./api/services/service.js"
+      }
+    }
+  ],
+  "actions": {
+    "before_install": [
+      {
+        "type": "NPM_INSTALL",
+        "parameters": {
+          "package": true
+        }
+      }
+    ],
+    "after_install": [
+      {
+        "name": "copy docs",
+        "type": "COPY_FILES",
+        "parameters": {
+          "source": "docs/api",
+          "target": "config/docs/api/ng-blockchain-provider-abci-project"
+        }
+      }
+    ],
+    "after_uninstall": [],
+    "before_activate": [],
+    "after_activate": [],
+    "before_deactivate": [],
+    "after_deactivate": []
+  },
+  "sharedServices": [],
+  "apiServices": [],
+  "extensionsPoints": [],
+  "isExtenting": [],
+  "settings": [
+    {
+      "name": "namespace",
+      "caption": "Root name of the URL for the route of the plugin",
+      "value": "ng-blockchain-provider-abci-project"
+    }
+  ]
+}

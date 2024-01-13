@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Transaction Application</title>
+  </head>
+  <body>
+    <div>
+      <h3>Wallets</h3>
+      <div>
+        <button id="btnCreateWallet">Create Wallet</button>
+      </div>
+      <ul id="lstWallets"></ul>
+    </div>
+    <div id="frmCreate">
+      <h3>Create Transaction</h3>
+      <div>Wallet: <select id="selWallet" class="lstWallets"></select></div>
+      <div>Amount: <input id="txtAmount" /></div>
+      <div>Description: <input id="txtCreateDescription" /></div>
+      <div><button id="btnPostCreateTx">Post TX</button></div>
+    </div>
+    <div id="frmTransfer">
+      <h3>Transfer Transaction</h3>
+      <div>Input Wallet: <select id="selInWallet" class="lstWallets"></select></div>
+      <div>Source TX ID: <input id="txtSrcTxId" /></div>
+      <div>Output Address: <input id="txtOutAddress" /></div>
+      <div>Description: <input id="txtTransferDescription" /></div>
+      <div><button id="btnPostTransferTx">Post TX</button></div>
+    </div>
+    <div>
+      <h3>Transactions</h3>
+      <table id="tblTx">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Timestamp</th>
+            <th>Status</th>
+            <th>Input TX</th>
+            <th>Output Address</th>
+            <th>Amount</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>

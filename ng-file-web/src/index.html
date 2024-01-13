@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>File upload/download</title>
+  </head>
+  <body>
+    <h3>Upload File</h3>
+    <input type="file" id="fileUpload" name="fileUpload" />
+    <p>
+      Block size: <span id="lblBlockSize"></span>
+    </p>
+
+    <h3>Download File</h3>
+    <div>File ID: <input id="txtFileId" /></div>
+    <div><button id="btnDownload">Download</button></div>
+
+    <h4>Encryption</h4>
+    <input type="checkbox" id="chkEncrypt" name="chkEncrypt" /> Encrypt / decrypt
+    Secret key: <input type="text" id="txtKey" name="txtKey" />
+  </body>
+</html>

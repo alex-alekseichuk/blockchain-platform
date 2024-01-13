@@ -1,0 +1,7 @@
+.idea
+node_modules
+nginx.conf
+frontend-config.json
+repos
+Dockerfile
+tmp

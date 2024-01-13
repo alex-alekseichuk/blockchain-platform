@@ -1,0 +1,184 @@
+[
+  {
+    "appName": "documentsSharing-backend",
+    "appUi": {},
+    "appSM": {
+      "states": [
+        {
+          "x": "entry_State",
+          "ys": [
+            {
+              "y": "entry_Point",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "start",
+                  "actions": [
+                    {
+                      "type": "uiAction",
+                      "name": "move-xy",
+                      "parameters": {
+                        "x": "entryPoint",
+                        "y": "showPage"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": "entryPoint",
+          "ys": [
+            {
+              "y": "showPage",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type": "uiAction",
+                      "name": "show-page",
+                      "parameters": {
+                        "isStaticHtml": true,
+                        "pageUrl": "/ng-app-documentsSharing-frontend/index.html"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": "app",
+          "ys": [
+            {
+              "y": "showPage",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type" : "uiAction",
+                      "name" : "stamped"
+                    },
+                    {
+                      "type": "uiAction",
+                      "name": "show-page",
+                      "parameters": {
+                        "isStaticHtml": true,
+                        "pageUrl": "/ng-app-documentsSharing-frontend/app.html"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "y": "enter",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type": "uiAction",
+                      "name": "move-xy",
+                      "parameters": {
+                        "x": "attachSmartContract",
+                        "y": "showPage"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": "attachSmartContract",
+          "ys": [
+            {
+              "y": "showPage",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type": "uiAction",
+                      "name": "show-page",
+                      "parameters": {
+                        "isStaticHtml": true,
+                        "pageUrl": "/attach-sc.html"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "y": "attached",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type": "uiAction",
+                      "name": "createTx",
+                      "parameters": {
+                        "createUrl": "/ng-app-documentsSharing-backend/createDocument",
+                        "postUrl": "/ng-app-documentsSharing-backend/postDocument"
+                      }
+                    },
+                    {
+                      "type": "uiAction",
+                      "name": "move-xy",
+                      "parameters": {
+                        "x": "entry_State",
+                        "y": "entry_Point"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": "downloadDocument",
+          "ys": [
+            {
+              "y": "showPage",
+              "activities": [
+                {
+                  "type": "uiAction",
+                  "name": "",
+                  "actions": [
+                    {
+                      "type" : "uiAction",
+                      "name" : "stamped"
+                    },
+                    {
+                      "type": "uiAction",
+                      "name": "show-page",
+                      "parameters": {
+                        "isStaticHtml": true,
+                        "pageUrl": "/ng-app-documentsSharing-frontend/download.html"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

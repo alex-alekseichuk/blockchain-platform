@@ -1,0 +1,20 @@
+{
+ "name": "ng-rt-digitalAsset-sdk-sample",
+ "description": "The Blockchain Enterprise Architecture Digital Asset SDK Samples",
+ "version": "3.2.",
+ "type": "optional",
+ "author": "",
+ "copyright": "PROJECT 2019",
+ "entryPoints": [],
+ "actions": {
+  "before_install": [],
+  "after_install": [],
+  "before_activate": [],
+  "after_activate": [],
+  "before_deactivate": [],
+  "after_deactivate": [],
+  "after_uninstall": []
+ },
+ "sharedServices": [],
+ "apiServices": []
+}

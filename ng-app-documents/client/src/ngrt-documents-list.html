@@ -1,0 +1,145 @@
+<dom-module id="ngrt-documents-list">
+  <template>
+    <ng-rt-grid id="grid"></ng-rt-grid>
+
+  </template>
+
+  <script>
+
+    Polymer({
+      is: 'ngrt-documents-list',
+      properties : {
+      },
+      gridOptions: {
+        enableSorting: true,
+        virtualPaging: false,
+        enableServerSideSorting: false,
+        enableServerSideFilter: false,
+        enableColResize: true,
+        rowSelection: 'single',
+        rowDeselection: true
+      },
+
+      columnDefinitions: [
+        {headerName: "Filename", field: "filename", filterParams: {apply: true},
+          cellStyle: {'padding': '0 10px 0 20px', 'line-height': '50px'}
+        },
+        {headerName: "Size", field: "size", filterParams: {apply: true},
+          cellStyle: {'padding': '0 10px 0 20px', 'line-height': '50px','text-align': 'left'}
+        },
+        {headerName: "Date Time", field: "datetime", filterParams: {apply: true},
+          cellStyle: {'padding': '0 10px 0 20px', 'line-height': '50px','text-align': 'left'}
+
+        },
+        {headerName: "Document Hash", field: "hash", filterParams: {apply: true},
+          cellStyle: {'padding': '0 10px 0 20px', 'line-height': '50px'}
+        }
+      ],
+      _update: function() {
+        this.$.grid.setRows(this.data);
+        this._translateColumnDefinitions();
+        this.$.grid.initGrid(this.gridOptions, this.columnDefinitions, '');
+        this.gridOptions.api.sizeColumnsToFit();
+      },
+      _translate: function(arg) {
+        return document.querySelector('i18n-msg').getMsg(arg) || arg
+      },
+      _translateColumnDefinitions: function() {
+        for (var i = 0; i < this.columnDefinitions.length; i++) {
+          this.columnDefinitions[i].headerName = this._translate(this.columnDefinitions[i].headerName);
+        }
+      },
+      _formatDatetime: function(timestamp) {
+        return moment(timestamp).format('YYYY-MM-DD hh:mm:ss');
+      },
+      attached: function() {
+
+        var component = this;
+
+        component.data = [];
+
+        ajax.get("/ng-app-documents/documents_list", function(data){
+
+          console.log("**************** data ****************");
+          console.log(data)
+/*
+          _.each(data, function (itemData) {
+            itemData.datetime = component._formatDatetime(itemData.timestamp);
+            component.data.push(itemData);
+          });
+          component._update();
+          component.$.toast.show("New file(s): " + _.map(data, function (item) {
+                    return item.filename;
+                  }).join(', '));
+*/
+
+          _.each(data, function (item) {
+            item.datetime = component._formatDatetime(item.timestamp);
+            item.size = item.size + " Kb";
+          });
+          component.data = data;
+          component._update();
+
+        });
+
+        /*
+        var component = this;
+        socketio.connect(function(socket){
+          if (!socket.ngAppDocumentsHandlersAttached) {
+            socket.ngAppDocumentsHandlersAttached = true;
+            socket.on('documents', function (data) {
+              _.each(data, function (itemData) {
+                itemData.datetime = component._formatDatetime(itemData.timestamp);
+                component.data.push(itemData);
+              });
+              component._update();
+              component.$.toast.show("New file(s): " + _.map(data, function (item) {
+                  return item.filename;
+                }).join(', '));
+            });
+          }
+          socket.emit('documents.getall', {}, function (data) {
+            _.each(data, function (item) {
+              item.datetime = component._formatDatetime(item.timestamp);
+            });
+            component.data = data;
+            component._update();
+          });
+        });
+        */
+      },
+      update: function() {
+
+        var component = this;
+
+        ajax.get("/ng-app-documents/documents_list", function(data){
+
+          console.log("**************** update data ****************");
+          console.log(data);
+
+          let newFile;
+
+          data.forEach(function(elem){
+
+            if (!newFile || elem.timestamp > newFile.timestamp)
+            {
+              newFile = elem;
+            }
+
+          });
+
+          newFile.datetime = component._formatDatetime(newFile.timestamp);
+          component.data.push(newFile);
+
+          component._update();
+          const toaster = document.getElementById('toaster');
+          toaster.show("New file(s): " + _.map([newFile], function (item) {
+                     return item.filename;
+                  }).join(', '));
+
+        });
+
+      }
+    });
+  </script>
+</dom-module>

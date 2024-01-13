@@ -1,0 +1,24 @@
+{
+  "name": "ng-app-documents",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.14.0",
+    "multer": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "validate": "npm-run-all --parallel unit lint",
+    "precommit": "npm run validate",
+    "prepush": "npm run validate",
+    "lint": "npx project-dev gulp lint",
+    "integration": "mocha --timeout 2400000 --exit test/plugins/**/*_test.js",
+    "unit": "nyc --nycrc-path=node_modules/ng-rt-dev-tools/.nycrc npx project-dev gulp test.unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.project.com:app/ng-app-documents.git"
+  },
+  "author": "",
+  "version": "2.0.0",
+  "license": "SEE LICENSE IN LICENSE.md"
+}
